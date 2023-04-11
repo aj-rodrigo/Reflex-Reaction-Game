@@ -2,9 +2,14 @@
 
 module Top(clk, rst, sw, seg, an, led);
   
-input clk, rst; input [15:0] sw; output [0:6] seg; output [3:0] an; output [15:0] led;
+input clk, rst; 
+input [15:0] sw;
+output [0:6] seg; 
+output [3:0] an; 
+output [15:0] led;
   
-wire [3:0] minsTens, minsOnes, hrsTens, hrsOnes; wire [5:0] timerOut2, scoreOut2;
+wire [3:0] minsTens, minsOnes, hrsTens, hrsOnes; 
+wire [5:0] timerOut2, scoreOut2;
 wire [15:0] ledW;
 wire [4:0] numW;
   
